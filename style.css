@@ -1,35 +1,46 @@
 html {
-    height: 100%;
-    width: 100%;
-    background-color: beige;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(207deg, rgba(2,0,36,1) 0%, rgba(9,121,121,1) 44%, rgba(0,212,255,1) 100%);
+}
+
+body {
+    margin: 20px;
+    padding: 20px;
 }
 
 .container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 20px;
 }
 
-.center {
-    width: 100%;
-    margin: 20px;
-    
+.soundboard-title {
+    display: flex;
+    justify-content: center;
+    color: rgb(63, 243, 63);
+    font-size: 3em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 button {
-    color: white;
-    min-width: 80px;
-    height: 100px;
-    padding: 30px;
+    color: rgb(69, 228, 69);
+    padding: 20px;
     margin: 10px;
-    background: linear-gradient(180deg, rgba(0, 195, 255, 0.726), rgba(255, 0, 0, 0.596));
+    background: inherit;
     border-radius: 10px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 2px solid rgb(7, 250, 116);
     cursor: pointer;
-    font-weight: 600;
+    font-size: 1.4em;;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 button:hover {
-    background: linear-gradient(180deg, rgb(114, 114, 114), rgb(12, 12, 12));
-    color: rgb(0, 255, 0);
-    box-shadow: 0 0 40px 2px black;
+    /* background: linear-gradient(180deg, rgb(114, 114, 114), rgb(12, 12, 12));
+    color: rgb(0, 255, 0); */
+    box-shadow: 0 0 40px 2px white;
+    border: 2px solid white;
+    color: white;
 }
